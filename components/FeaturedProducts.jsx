@@ -57,7 +57,7 @@ export default function FeaturedProducts({ products, title = "Productos Destacad
         }
       }
     ],
-    dotsClass: "slick-dots custom-dots-products",
+    dotsClass: "slick-dots products-dots",
   };
 
   return (
@@ -131,25 +131,24 @@ export default function FeaturedProducts({ products, title = "Productos Destacad
       </div>
 
       <style jsx global>{`
-        .custom-dots-products {
+        .products-dots {
           display: flex !important;
           justify-content: center;
-          gap: 0.5rem;
+          gap: 0.75rem;
           margin-top: 2rem;
           list-style: none;
           padding: 0;
         }
 
-        .custom-dots-products li {
+        .products-dots li {
           margin: 0;
         }
 
-        .custom-dots-products li button {
-          width: 8px;
-          height: 8px;
+        .products-dots li button {
+          width: 32px;
+          height: 2px;
           padding: 0;
-          border-radius: 50%;
-          background-color: rgba(255, 255, 255, 0.3);
+          background-color: rgba(255, 255, 255, 0.4);
           border: none;
           cursor: pointer;
           transition: all 0.3s ease;
@@ -157,18 +156,16 @@ export default function FeaturedProducts({ products, title = "Productos Destacad
           line-height: 0;
         }
 
-        .custom-dots-products li button:hover {
-          background-color: rgba(255, 255, 255, 0.5);
-          transform: scale(1.2);
+        .products-dots li button:hover {
+          background-color: rgba(255, 255, 255, 0.7);
         }
 
-        .custom-dots-products li.slick-active button {
-          width: 24px;
-          border-radius: 4px;
-          background-color: rgba(255, 255, 255, 0.9);
+        .products-dots li.slick-active button {
+          width: 48px;
+          background-color: rgba(255, 255, 255, 1);
         }
 
-        .custom-dots-products li button:before {
+        .products-dots li button:before {
           display: none;
         }
       `}</style>

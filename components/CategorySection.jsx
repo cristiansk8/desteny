@@ -79,7 +79,7 @@ export default function CategorySection() {
         }
       }
     ],
-    dotsClass: "slick-dots custom-dots-minimal",
+    dotsClass: "slick-dots category-dots",
   };
 
   return (
@@ -92,7 +92,7 @@ export default function CategorySection() {
             <h2 className="font-belleza text-2xl sm:text-3xl lg:text-5xl font-light tracking-wide mb-6 sm:mb-8 leading-tight text-white text-center lg:text-left">
               Explora más
             </h2>
-            <img src="/logo-desteny-2.png" alt="toro-juan-becerra" className="h-42 w-auto mb-4 filter brightness-0 invert mx-auto lg:mx-0" />
+            <img src="/logo-desteny-2.png" alt="toro-juan-becerra" className="h-32 w-auto mb-4 filter brightness-0 invert mx-auto lg:mx-0" />
           </div>
 
           {/* Slider - Derecha */}
@@ -118,9 +118,9 @@ export default function CategorySection() {
 
                         {/* Contenido de texto */}
                         <div className="absolute inset-0 flex flex-col justify-end p-8 sm:p-10">
-<h3 className="uppercase text-2xl sm:text-3xl font-semibold text-white tracking-wider transform group-hover:scale-105 transition-transform duration-300">
-  {category.name}
-</h3>
+                          <h3 className="uppercase text-2xl sm:text-3xl font-semibold text-white tracking-wider transform group-hover:scale-105 transition-transform duration-300">
+                            {category.name}
+                          </h3>
                           <p className="text-white text-sm sm:text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             Explorar →
                           </p>
@@ -140,25 +140,24 @@ export default function CategorySection() {
       </div>
 
       <style jsx global>{`
-        .custom-dots-minimal {
+        .category-dots {
           display: flex !important;
           justify-content: center;
-          gap: 0.5rem;
+          gap: 0.75rem;
           margin-top: 2rem;
           list-style: none;
           padding: 0;
         }
 
-        .custom-dots-minimal li {
+        .category-dots li {
           margin: 0;
         }
 
-        .custom-dots-minimal li button {
-          width: 8px;
-          height: 8px;
+        .category-dots li button {
+          width: 32px;
+          height: 2px;
           padding: 0;
-          border-radius: 50%;
-          background-color: rgba(255, 255, 255, 0.3);
+          background-color: rgba(255, 255, 255, 0.4);
           border: none;
           cursor: pointer;
           transition: all 0.3s ease;
@@ -166,18 +165,16 @@ export default function CategorySection() {
           line-height: 0;
         }
 
-        .custom-dots-minimal li button:hover {
-          background-color: rgba(255, 255, 255, 0.5);
-          transform: scale(1.2);
+        .category-dots li button:hover {
+          background-color: rgba(255, 255, 255, 0.7);
         }
 
-        .custom-dots-minimal li.slick-active button {
-          width: 24px;
-          border-radius: 4px;
-          background-color: rgba(255, 255, 255, 0.9);
+        .category-dots li.slick-active button {
+          width: 48px;
+          background-color: rgba(255, 255, 255, 1);
         }
 
-        .custom-dots-minimal li button:before {
+        .category-dots li button:before {
           display: none;
         }
       `}</style>
