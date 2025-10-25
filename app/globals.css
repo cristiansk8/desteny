@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  /* === Paleta de Marca - Juan Becerra === */
+  --brand-primary: #000000; /* Negro elegante */
+  --brand-secondary: #FFFFFF; /* Blanco puro */
+  --brand-accent: #C0A080; /* Beige/Dorado para elegancia */
+  --brand-neutral: #F3F4F6; /* Gris claro para fondos (Tailwind gray-100) */
+  --brand-text: #6B7280; /* Gris neutro para texto (Tailwind gray-500) */
+
+  /* Variables para temas claro/oscuro (si las necesitas en el futuro) */
+  --background: var(--brand-secondary);
+  --foreground: var(--brand-primary);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--brand-primary);
+    --foreground: var(--brand-secondary);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
