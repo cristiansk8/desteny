@@ -77,6 +77,13 @@ export default function CategorySection() {
           slidesToShow: 1,
           slidesToScroll: 1,
         }
+      },
+            {
+        breakpoint: 340,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
       }
     ],
     dotsClass: "slick-dots category-dots",

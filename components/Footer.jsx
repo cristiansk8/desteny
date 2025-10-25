@@ -76,7 +76,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                <p className="text-gray-400">hola@juanbecerra.co</p>
+                <p className="text-gray-400">hola@desteny.co</p>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
             <p className="text-gray-400 text-sm">
-              © 2024 Juan Becerra. Todos los derechos reservados.
+              © 2025 Desteny. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
