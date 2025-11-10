@@ -4,9 +4,9 @@ import { Search, ShoppingBag, User, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "/collections/new", text: "Nueva Colección", highlight: false },
-  { href: "/collections/hombre", text: "Hombre", highlight: false },
-  { href: "/collections/accesorios", text: "Accesorios", highlight: false },
+  { href: "/collections/new", text: "New Collection", highlight: false },
+  { href: "/collections/hombre", text: "Women", highlight: false },
+  { href: "/collections/accesorios", text: "Accessories", highlight: false },
   { href: "/collections/sale", text: "Sale", highlight: true },
 ];
 
@@ -63,7 +63,7 @@ export default function Navbar({ variant = 'transparent' }) {
               <Link href="/">
                 <img 
                   src="/logo-desteny.png"
-                  alt="Juan Becerra" 
+                  alt="Desteny" 
                   className={`h-20 lg:h-30 w-auto transition-all duration-500 ${
                     isScrolled || isSolidVariant ? 'brightness-100' : 'brightness-0 invert'
                   }`}
@@ -126,7 +126,7 @@ export default function Navbar({ variant = 'transparent' }) {
         <div className="flex items-center justify-between p-6 border-b">
           <img 
             src="/logo-desteny.png"
-            alt="Juan Becerra" 
+            alt="Desteny" 
             className="h-16 w-auto"
           />
           <button 
@@ -153,16 +153,16 @@ export default function Navbar({ variant = 'transparent' }) {
         <div className="p-6 border-t space-y-4">
           <button className="w-full flex items-center gap-3 p-3 hover:bg-gray-100 rounded-lg transition-colors">
             <Search className="h-5 w-5 text-gray-900" />
-            <span className="text-gray-900">Buscar</span>
+            <span className="text-gray-900">Search</span>
           </button>
           <button className="w-full flex items-center gap-3 p-3 hover:bg-gray-100 rounded-lg transition-colors">
             <User className="h-5 w-5 text-gray-900" />
-            <span className="text-gray-900">Mi Cuenta</span>
+            <span className="text-gray-900">My Account</span>
           </button>
           <button className="w-full flex items-center justify-between p-3 bg-[#2a2a2a] text-white rounded-lg hover:bg-[#4a0909] transition-colors">
             <div className="flex items-center gap-3">
               <ShoppingBag className="h-5 w-5" />
-              <span>Carrito</span>
+              <span>Cart</span>
             </div>
             <span className="bg-white text-[#2a2a2a] px-2 py-1 rounded-full text-sm font-semibold">
               2

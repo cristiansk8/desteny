@@ -11,8 +11,8 @@ export async function generateMetadata({ params }) {
   // y retornar un título y descripción dinámicos.
   const productName = params.slug.replace(/-/g, ' ');
   return {
-    title: `${productName.charAt(0).toUpperCase() + productName.slice(1)} | Juan Becerra`,
-    description: `Detalles del producto ${productName}.`,
+    title: `${productName.charAt(0).toUpperCase() + productName.slice(1)} | Desteny`,
+    description: `Product details for ${productName}.`,
   };
 }
 

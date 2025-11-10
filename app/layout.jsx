@@ -1,8 +1,8 @@
 import "./globals.css";
 import { belleza, moderat } from "../components/fonts";
 export const metadata = {
-  title: "Juan Becerra",
-  description: "Elegancia sin límites. Moda premium que define tu estilo.",
+  title: "Desteny",
+  description: "Limitless elegance. Premium fashion that defines your style.",
 };
 
 export default function RootLayout({

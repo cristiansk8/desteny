@@ -6,12 +6,12 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-// Componente de flecha personalizada
+// Custom arrow component
 const CustomArrow = ({ direction, onClick }) => (
   <button
     onClick={onClick}
     className={`absolute ${direction === 'left' ? 'left-2 sm:left-4' : 'right-2 sm:right-4'} top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 sm:p-3 lg:p-4 rounded-full shadow-lg transition-all duration-300 z-30 hover:scale-110`}
-    aria-label={direction === 'left' ? 'Anterior' : 'Siguiente'}
+    aria-label={direction === 'left' ? 'Previous' : 'Next'}
   >
     {direction === 'left' ? (
       <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-gray-900" />
@@ -21,14 +21,14 @@ const CustomArrow = ({ direction, onClick }) => (
   </button>
 );
 
-export default function FeaturedProducts({ products, title = "Productos Destacados" }) {
+export default function FeaturedProducts({ products, title = "Featured Products" }) {
   const sliderRef = useRef(null);
 
   if (!products || products.length === 0) {
     return null;
   }
 
-  // Duplicar productos para efecto infinito
+  // Duplicate products for infinite effect
   const extendedProducts = [...products, ...products];
 
   const settings = {
@@ -94,7 +94,7 @@ export default function FeaturedProducts({ products, title = "Productos Destacad
                             {product.price}
                           </p>
                           <p className="text-white text-sm sm:text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            Ver Detalles →
+                            View Details →
                           </p>
                         </div>
                       </div>
@@ -115,14 +115,14 @@ export default function FeaturedProducts({ products, title = "Productos Destacad
               {title}
             </h2>
             <p className="font-moderat text-base md:text-lg leading-relaxed text-white/90 text-center lg:text-left">
-              Descubre nuestros artículos más populares y exclusivos. Cada pieza ha sido cuidadosamente seleccionada para ofrecerte la mejor calidad y estilo.
+              Discover our most popular and exclusive items. Each piece has been carefully selected to offer you the best quality and style.
             </p>
             <div className="flex justify-center lg:justify-start">
               <a 
                 href="#productos" 
                 className="inline-flex items-center gap-3 font-moderat text-white text-sm sm:text-base tracking-[0.15em] uppercase font-light border border-white/50 px-8 py-3 hover:bg-white hover:text-black transition-all duration-300"
               >
-                Ver Todos
+                View All
               </a>
             </div>
           </div>

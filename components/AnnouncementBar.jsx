@@ -9,10 +9,10 @@ const AnnouncementBar = () => {
         <p>
           <span role="img" aria-label="party popper">🎉</span>
           <span className="hidden sm:inline mx-2">
-            ¡Oferta por tiempo limitado! Obtén hasta 20% de descuento.
+            Limited time offer! Get up to 20% off.
           </span>
           <a href="#oferta" className="ml-2 font-semibold underline hover:text-white/80 transition-colors duration-300 inline-flex items-center">
-            Ver detalles
+            View details
             <ArrowRight size={16} className="ml-1" />
           </a>
         </p>

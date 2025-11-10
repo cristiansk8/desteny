@@ -19,16 +19,16 @@ export default function BrandPhilosophy() {
         <div className="bg-[#f8f7f4] flex items-center justify-center p-8 sm:p-12 lg:p-16 xl:p-24">
           <div className="max-w-lg space-y-6">
             <p className="text-[#620c0b] text-xs tracking-[0.3em] uppercase font-medium">
-              Nuestra Filosofía
+              Our Philosophy
             </p>
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900 leading-tight">
-              Artesanía que trasciende
+              Craftsmanship that transcends
             </h3>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed font-light">
-              En Desteny, creemos que la verdadera elegancia no grita, susurra. Cada pieza es cuidadosamente seleccionada para quien entiende que el estilo no es una tendencia, es una filosofía de vida.
+              At Desteny, we believe true elegance does not shout, it whispers. Each piece is carefully selected for those who understand that style is not a trend — it's a way of life.
             </p>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed font-light">
-              Desde 2017, hemos dedicado nuestra pasión a ofrecer accesorios premium que definen carácter y distinción en cada detalle.
+              Since 2017, we have dedicated our passion to offering premium accessories that define character and distinction in every detail.
             </p>
           </div>
         </div>
@@ -42,10 +42,10 @@ export default function BrandPhilosophy() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
             </svg>
             <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-light text-gray-900 leading-relaxed italic">
-              La moda pasa, el estilo permanece
+              Fashion passes, style remains
             </blockquote>
             <p className="text-gray-500 text-sm tracking-[0.2em] uppercase font-medium">
-              — Nathaly Desteny, Fundadora
+              — Nathaly Desteny, Founder
             </p>
           </div>
         </div>
@@ -57,17 +57,17 @@ export default function BrandPhilosophy() {
         <div className="bg-[#f8f7f4] flex items-center justify-center p-8 sm:p-12 lg:p-16 xl:p-24 order-2 lg:order-1">
           <div className="max-w-lg space-y-6">
             <p className="text-white/70 text-xs tracking-[0.3em] uppercase font-medium">
-              Calidad Premium
+              Premium Quality
             </p>
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-light leading-tight">
-              Materiales excepcionales
+              Exceptional Materials
             </h3>
             <p className="text-base sm:text-lg leading-relaxed font-light">
-              Trabajamos únicamente con los mejores materiales: cuero genuino, textiles premium y herrajes de alta calidad que garantizan durabilidad y estilo atemporal.
+              We work only with the finest materials: genuine leather, premium textiles, and high-quality hardware that ensure durability and timeless style.
             </p>
             <div className="pt-4">
               <a href="#productos" className="inline-block text-white text-sm tracking-[0.2em] uppercase font-medium border-b-2 border-white/50 hover:border-white transition-colors pb-1">
-                Explorar Colección
+                Explore Collection
               </a>
             </div>
           </div>

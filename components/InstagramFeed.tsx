@@ -16,7 +16,7 @@ export default function InstagramFeed() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-belleza text-2xl sm:text-3xl lg:text-5xl font-light tracking-wide mb-6 leading-tight text-white">
-            Síguenos en Instagram
+            Follow us on Instagram
           </h2>
           <a 
             href="https://www.instagram.com/destenyofficial" 
@@ -40,9 +40,9 @@ export default function InstagramFeed() {
                     className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                   />
                   
-                  {/* Overlay con efecto hover */}
+                  {/* Overlay with hover effect */}
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-3">
-                    {/* Icono de Instagram */}
+                    {/* Instagram icon */}
                     <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                       <Instagram className="h-10 w-10 text-white" />
                     </div>
@@ -54,7 +54,7 @@ export default function InstagramFeed() {
                     </div>
                   </div>
                   
-                  {/* Borde blanco sutil en hover */}
+                  {/* Subtle white border on hover */}
                   <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/40 transition-all duration-300 pointer-events-none"></div>
                 </div>
               </a>
@@ -62,7 +62,7 @@ export default function InstagramFeed() {
           ))}
         </div>
         
-        {/* CTA Button con estándar */}
+        {/* CTA Button with standard */}
         <div className="text-center mt-12">
           <a
             href="https://instagram.com/juanbecerra_shop"
@@ -71,7 +71,7 @@ export default function InstagramFeed() {
             className="inline-flex items-center gap-3 font-moderat text-white text-sm sm:text-base tracking-[0.15em] uppercase font-light border border-white/50 px-8 py-3 hover:bg-white hover:text-black transition-all duration-300"
           >
             <Instagram className="h-5 w-5" />
-            Ver más en Instagram
+            View more on Instagram
           </a>
         </div>
       </div>

@@ -14,8 +14,8 @@ export default function Footer() {
               className="h-42 w-auto mb-4 filter brightness-0 invert"
             />
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Elegancia sin límites desde 2017. Moda premium que define tu estilo 
-              con calidad y sofisticación en cada pieza de nuestra colección exclusiva.
+              Limitless elegance since 2017. Premium fashion that defines your style
+              with quality and sophistication in every piece of our exclusive collection.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
@@ -35,12 +35,12 @@ export default function Footer() {
 
           {/* Categories */}
           <div>
-            <h4 className="text-lg mb-6">Categorías</h4>
+            <h4 className="text-lg mb-6">Categories</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Nueva Colección</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Hombre</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Mujer</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Accesorios</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">New Collection</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Men</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Women</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Accessories</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Sale</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Lookbook</a></li>
             </ul>
@@ -48,20 +48,20 @@ export default function Footer() {
 
           {/* Help & Support */}
           <div>
-            <h4 className="text-lg mb-6">Ayuda</h4>
+            <h4 className="text-lg mb-6">Help</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Centro de Ayuda</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Guía de Tallas</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Envíos y Devoluciones</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Métodos de Pago</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Rastrear Pedido</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Contacto</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Help Center</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Size Guide</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Shipping & Returns</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Payment Methods</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Track Order</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg mb-6">Contacto</h4>
+            <h4 className="text-lg mb-6">Contact</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-gray-400 mt-0.5 flex-shrink-0" />
@@ -88,14 +88,14 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
             <p className="text-gray-400 text-sm">
-              © 2025 Desteny. Todos los derechos reservados.
+              © 2025 Desteny. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                Política de Privacidad
+                Privacy Policy
               </a>
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                Términos y Condiciones
+                Terms & Conditions
               </a>
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
                 Cookies
@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
           
           <div className="flex items-center space-x-4">
-            <p className="text-gray-400 text-sm">Métodos de pago:</p>
+            <p className="text-gray-400 text-sm">Payment methods:</p>
             <div className="flex space-x-2">
               <div className="w-8 h-5 bg-gradient-to-r from-blue-600 to-blue-700 rounded text-xs flex items-center justify-center text-white">
                 💳

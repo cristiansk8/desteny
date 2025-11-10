@@ -8,25 +8,25 @@ import "slick-carousel/slick/slick-theme.css";
 const categories = [
   {
     id: 1,
-    name: "sudaderas",
+    name: "Sweatshirts",
     href: "/collections/cinturones",
     imageSrc: "/cat-1.webp",
   },
   {
     id: 2,
-    name: "leggings",
+    name: "Leggings",
     href: "/collections/gorras",
     imageSrc: "/cat-2.webp",
   },
   {
     id: 3,
-    name: "deportiva",
+    name: "Athletic",
     href: "/collections/tarjeteros",
-    imageSrc: "/cat-3.webp",
+    imageSrc: "/desteny-web.jpeg",
   },
   {
     id: 4,
-    name: "verano",
+    name: "Summer",
     href: "/collections/sacos",
     imageSrc: "/cat-4.webp",
   },
@@ -37,7 +37,7 @@ const CustomArrow = ({ direction, onClick }) => (
   <button
     onClick={onClick}
     className={`absolute ${direction === 'left' ? 'left-2 sm:left-4' : 'right-2 sm:right-4'} top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 sm:p-3 lg:p-4 rounded-full shadow-lg transition-all duration-300 z-30 hover:scale-110`}
-    aria-label={direction === 'left' ? 'Anterior' : 'Siguiente'}
+    aria-label={direction === 'left' ? 'Previous' : 'Next'}
   >
     {direction === 'left' ? (
       <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-gray-900" />
@@ -97,7 +97,7 @@ export default function CategorySection() {
           {/* Caption - Izquierda */}
           <div className="lg:col-span-3 space-y-6">
             <h2 className="font-belleza text-2xl sm:text-3xl lg:text-5xl font-light tracking-wide mb-6 sm:mb-8 leading-tight text-white text-center lg:text-left">
-              Explora más
+              Explore more
             </h2>
             <img src="/logo-desteny-2.png" alt="toro-juan-becerra" className="h-32 w-auto mb-4 filter brightness-0 invert mx-auto lg:mx-0" />
           </div>
@@ -129,7 +129,7 @@ export default function CategorySection() {
                             {category.name}
                           </h3>
                           <p className="text-white text-sm sm:text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            Explorar →
+                            Explore →
                           </p>
                         </div>
                       </div>

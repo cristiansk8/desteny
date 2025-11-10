@@ -15,7 +15,7 @@ export default function HeroSection() {
           {/* Fallback image si el video no carga */}
           <img
             src="/banner-hero-desteny.webp"
-            alt="Banner Juan Becerra"
+            alt="Banner Desteny"
             className="w-full h-full object-cover"
           />
         </video>
@@ -27,12 +27,12 @@ export default function HeroSection() {
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <h1 className="font-belleza text-4xl sm:text-5xl lg:text-7xl font-light tracking-wide mb-6 sm:mb-8 leading-tight">
-          Nueva Colección
+          New Collection
         </h1>
-        
+
         <p className="font-light text-base sm:text-lg lg:text-xl mb-10 sm:mb-12 max-w-2xl mx-auto opacity-90 leading-relaxed">
-          Descubre las últimas tendencias en moda premium. 
-          Elegancia y sofisticación en cada pieza.
+          Discover the latest trends in premium fashion.
+          Elegance and sophistication in every piece.
         </p>
         
         {/* Botones estilo editorial */}
@@ -42,7 +42,7 @@ export default function HeroSection() {
             href="#seasonal" 
             className="group inline-flex items-center gap-3 text-white text-sm sm:text-base tracking-[0.2em] uppercase font-medium border-b-2 border-white pb-2 hover:border-white/60 transition-all duration-300"
           >
-            Explorar Colección
+            Explore Collection
             <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -53,7 +53,7 @@ export default function HeroSection() {
             href="#seasonal" 
             className="inline-flex items-center gap-3 text-white text-sm sm:text-base tracking-[0.15em] uppercase font-light border border-white/50 px-8 py-3 hover:bg-white hover:text-black transition-all duration-300"
           >
-            Ver Lookbook
+            View Lookbook
           </a>
         </div>
       </div>

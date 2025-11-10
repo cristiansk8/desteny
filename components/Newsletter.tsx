@@ -13,7 +13,7 @@ export default function Newsletter() {
 
     setTimeout(() => {
       setIsSubmitting(false);
-      setToast({ message: '¡Gracias por suscribirte!', type: 'success' });
+      setToast({ message: 'Thank you for subscribing!', type: 'success' });
       setEmail('');
       setTimeout(() => setToast(null), 3000);
     }, 1200);
@@ -37,11 +37,11 @@ export default function Newsletter() {
         </div>
 
         <h2 className="font-belleza text-2xl sm:text-3xl lg:text-5xl font-light tracking-wide mb-6 leading-tight text-gray-900">
-          Suscríbete a nuestro Newsletter
+          Subscribe to our Newsletter
         </h2>
-        
+
         <p className="font-moderat text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mb-10">
-          Recibe las últimas noticias, colecciones y ofertas especiales directamente en tu bandeja de entrada.
+          Receive the latest news, collections, and special offers directly in your inbox.
         </p>
 
         <div className="mt-10 mx-auto max-w-xl">
@@ -52,7 +52,7 @@ export default function Newsletter() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Ingresa tu email"
+              placeholder="Enter your email"
               className="font-moderat flex-auto border border-gray-300 bg-white px-5 py-3.5 text-gray-900 placeholder:text-gray-400 focus:border-[#620c0b] focus:ring-2 focus:ring-[#620c0b] focus:outline-none transition-all duration-300 text-base"
             />
             <button
@@ -61,12 +61,12 @@ export default function Newsletter() {
               disabled={isSubmitting}
               className="font-moderat flex-none bg-[#10867D] px-8 py-3.5 text-sm tracking-[0.15em] uppercase font-medium text-white hover:bg-[#2a2a2a] focus:outline-none focus:ring-2 focus:ring-[#620c0b] focus:ring-offset-2 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300"
             >
-              {isSubmitting ? 'Enviando...' : 'Suscribirse'}
+              {isSubmitting ? 'Sending...' : 'Subscribe'}
             </button>
           </div>
           
           <p className="font-moderat text-xs text-gray-500 mt-4 leading-relaxed">
-            Al suscribirte, aceptas recibir correos de Juan Becerra. Puedes cancelar en cualquier momento.
+            By subscribing, you agree to receive emails from Desteny. You can unsubscribe at any time.
           </p>
         </div>
       </div>

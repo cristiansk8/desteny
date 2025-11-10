@@ -8,7 +8,7 @@ import { notFound } from "next/navigation";
 export async function generateMetadata({ params }) {
   const categoryName = params.slug.replace(/-/g, ' ');
   return {
-    title: `Colección ${categoryName.charAt(0).toUpperCase() + categoryName.slice(1)} | Juan Becerra`,
+    title: `Collection ${categoryName.charAt(0).toUpperCase() + categoryName.slice(1)} | Desteny`,
   };
 }
 

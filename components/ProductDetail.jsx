@@ -103,7 +103,7 @@ export default function ProductDetail({ product, relatedProducts }) {
             <ol role="list" className="flex items-center space-x-2 text-sm font-light text-gray-500">
               <li><a href="/" className="hover:text-gray-700">Home</a></li>
               <li><ChevronRight className="h-4 w-4" /></li>
-              <li><a href="/collections/accesorios" className="hover:text-gray-700">Accesorios</a></li>
+              <li><a href="/collections/accesorios" className="hover:text-gray-700">Accessories</a></li>
             </ol>
           </nav>
 
@@ -118,9 +118,9 @@ export default function ProductDetail({ product, relatedProducts }) {
           </div>
 
           <div className="mt-8">
-            {/* Selector de Cantidad */}
+            {/* Quantity selector */}
             <div className="flex items-center gap-4 mb-8">
-              <p className="text-sm font-medium text-gray-900">Cantidad:</p>
+              <p className="text-sm font-medium text-gray-900">Quantity:</p>
               <div className="flex items-center border border-gray-300">
                 <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="px-3 py-2 text-gray-500 hover:bg-gray-100 transition-colors">
                   <Minus className="h-4 w-4" />
@@ -132,13 +132,13 @@ export default function ProductDetail({ product, relatedProducts }) {
               </div>
             </div>
 
-            {/* Botón Añadir al Carrito */}
+            {/* Add to Cart button */}
             <button
               type="submit"
               className="w-full flex items-center justify-center gap-3 bg-[#10867D] text-white px-8 py-4 text-sm tracking-[0.15em] uppercase font-medium hover:bg-[#2a2a2a] transition-all duration-300"
             >
               <ShoppingBag className="h-5 w-5" />
-              Añadir al Carrito
+              Add to Cart
             </button>
           </div>
 
@@ -161,7 +161,7 @@ export default function ProductDetail({ product, relatedProducts }) {
       <div className="bg-[#f8f7f4] py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-belleza text-2xl sm:text-3xl lg:text-4xl font-light tracking-wide mb-12 leading-tight text-gray-900">
-              También te podría gustar
+              You may also like
             </h2>
         </div>        <FeaturedProducts products={relatedProducts} />
       </div>
